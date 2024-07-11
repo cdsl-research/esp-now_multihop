@@ -18,7 +18,7 @@ try:
         if msg:             # msg == None if timeout in recv()
             print(host, msg)
             e.send(msg)
-            time.sleep_ms(500)
+            time.sleep(1)
             if msg == b'end':
                 break
 
