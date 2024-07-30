@@ -28,7 +28,7 @@ try:
     time.sleep(60)
     
 except Exception as e:
-    f = open("error.log", "a")
+    f = open("relay_error.log", "a")
     f.write(str(e))
     f.write("\n")
     f.close()
